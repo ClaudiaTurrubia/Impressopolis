@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Guia de Impressão 3D</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/guia.css">
+</head>
+<body>
+
+    <header class="header-menu">
+        <nav>
+            <a href="index.html">Menu</a>
+            <a href="modulos.html">Módulos</a>
+            <a href="guia.html" class="active">Guia de Impressão 3D</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <aside class="sidebar">
+            <ul>
+                <li class="titulo"><a href="#conceitos">• Conceitos Básicos</a></li>
+                <li class="subitem"><a href="#o-que-e">– O que é Impressão 3D?</a></li>
+                <li class="subitem"><a href="#tipos-impressao">– Tipos de Impressão 3D</a></li>
+                <li class="subitem"><a href="#materiais">– Tipos de Materiais</a></li>
+                <li class="subitem"><a href="#arquivos">– Tipos de Arquivos</a></li>
+                <li class="subitem"><a href="#fatiador">– Fatiador</a></li>
+                <li class="subitem"><a href="#calibracao">– Calibração</a></li>
+
+                <li class="titulo"><a href="#parametros">• Parâmetros de Impressão</a></li>
+                <li class="subitem"><a href="#altura-camada">– Altura de Camada</a></li>
+                <li class="subitem"><a href="#velocidade">– Velocidade de Impressão</a></li>
+                <li class="subitem"><a href="#temp-extrusao">– Temperatura de Extrusão</a></li>
+                <li class="subitem"><a href="#temp-mesa">– Temperatura da Mesa</a></li>
+                <li class="subitem"><a href="#resfriamento">– Resfriamento</a></li>
+                <li class="subitem"><a href="#retracao">– Retração</a></li>
+                <li class="subitem"><a href="#fluxo">– Fluxo</a></li>
+                <li class="subitem"><a href="#suportes">– Suportes</a></li>
+
+                <li class="titulo"><a href="#erros">• Erros Comuns</a></li>
+                <li class="subitem"><a href="#overhang">– Overhang</a></li>
+                <li class="subitem"><a href="#stringing">– Stringing</a></li>
+                <li class="subitem"><a href="#warping">– Warping</a></li>
+                <li class="subitem"><a href="#ponte">– Ponte</a></li>
+                <li class="subitem"><a href="#ondulacoes">– Ondulações</a></li>
+                <li class="subitem"><a href="#extrusao">– Sub/Sobreextrusão</a></li>
+                <li class="subitem"><a href="#pe-elefante">– Pé de Elefante</a></li>
+            </ul>
+        </aside>
+
+        <section class="conteudo">
+             <div class="banner-guia">
+                <h1>Guia de Impressão 3D</h1>
+            </div>
+
+            <article id="conceitos">
+                <h2>Conceitos Básicos</h2>
+
+                <h3 id="o-que-e">O que é Impressão 3D?</h3>
+                <p>A impressão 3D, também conhecida como manufatura aditiva, é um processo de fabricação em que se constrói o objeto por meio de adição de material em camadas sucessivas, a partir de um modelo digital tridimensional.
+                <br> Então, o processo começa ao criar um modelo 3D em um software CAD, depois, ele é preparado para impressão em um software chamado fatiador (ou “slicer”) responsável por ler o modelo 3D e criar as orientações para a impressora, dividindo o modelo em camadas. Por fim, a impressora recebe as orientações e começa a fabricar o objeto.</p>
+
+                <h3 id="tipos-impressao">Tipos de Impressão 3D</h3>
+                <p>Existem diversas tecnologias de impressão 3D, que podem ser classificadas de acordo com a matéria-prima: sólido, líquido ou pó; ou com o princípio de processamento do material. Nessa categoria, alguns dos processos mais populares são:</p>
+                <p>FDM (Fused Deposition Modeling): cria o objeto pela deposição de filamento termoplástico derretido, camada por camada, por meio de um bico aquecido.<br>
+
+                SLA (Stereolithography): utiliza resina líquida fotossensível que é solidificada camada a camada por meio de um laser.<br>
+
+                SLS (Selective Laser Sintering): emprega um laser para sinterizar pó (geralmente polímeros), formando o objeto sem necessidade de estruturas de suporte.<br>
+
+                DLP (Digital Light Processing): semelhante ao SLA, solidifica resina líquida camada a camada, porém utiliza uma tela de projeção digital para curar cada camada de uma vez.</p>
+                <p>Neste guia, iremos abordar a impressão 3D FDM. Nesse processo, um filamento termoplástico é aquecido e extrudado por um bico, sendo depositado camada por camada até formar o objeto final.</p>
+</p>
+
+                <h3 id="materiais">Tipos de Materiais</h3>
+                <p>Na impressão 3D FDM, o material mais utilizado é o filamento termoplástico. Existem diversos tipos disponíveis, cada um com características específicas, dentre os mais populares podemos encontrar:</p>
+
+                <p>PLA (Ácido Poliláctico): produzido a partir de fontes renováveis, é um material de fácil impressão e pode ser usado em impressoras abertas. Geralmente é mais usado para fins decorativos devido a sua boa qualidade estética, porém resistência mais baixa.<br>
+
+                ABS: Derivado do petróleo, esse material apresenta boa resistência a impactos e temperaturas maiores, sendo muito usado desde o meio doméstico até a indústria. Esse material deve ser usado em impressoras fechadas, pois pode sofrer mais com a variação de temperatura externa e emite gases e partículas prejudiciais durante o processo.<br>
+
+                PETG: Um material muito resistente, ideal para peças que precisam absorver impactos, pode ser usado em impressoras abertas.<br>
+
+                TPU: Também conhecido como filamento flexível, esse material permite criar objetos maleáveis.</p>
+
+                <p>Além desses, existem diversos tipos de filamentos, como materiais com carga de madeira, filamentos solúveis e outras propriedades técnicas específicas. Esses materiais ainda são menos comuns e geralmente exigem maior controle dos parâmetros de impressão.</p>
+
+                <h3 id="arquivos">Tipos de Arquivos Utilizados</h3>
+                <p>Durante o processo de impressão 3D, diferentes tipos de arquivos são utilizados:</p>
+
+                <p>STL: formato mais comum para modelos 3D, representa a geometria do objeto por meio de uma malha de triângulos.<br>
+
+                OBJ e STEP: também utilizados para modelos 3D.<br>
+
+                3MF: arquivo utilizado dentro do fatiador, que reúne o modelo e os parâmetros (configurações) de impressão.<br>
+
+                G-code: arquivo final gerado pelo fatiador, contendo todas as instruções que a impressora irá executar durante a impressão.</p>
+
+                <h3 id="fatiador">Fatiador</h3>
+                <p>O fatiador é o software responsável por preparar o modelo 3D para a impressão. Ele interpreta o modelo tridimensional e o divide em camadas, além de permitir alterar todas as configurações necessárias para que a impressora execute o processo corretamente (como temperatura, velocidade, etc).<br>
+
+                Neste guia, o fatiador utilizado é o Orca Slicer, mas existem diversos softwares de fatiamento, que funcionarão com os mesmos princípios.</p>
+
+                <p>Interface do Orca Slicer</p>
+
+                <div class="imagem-guia">
+                    <img src="img/2- Print Orca Slicer Interface.JPG" alt="Interface do Orca Slicer">
+                </div>
+
+                <h3 id="calibracao">Calibração</h3>
+                    <p>São modelos usados com objetivo de avaliar o comportamento da impressora, do material e dos parâmetros de fatiamento durante o processo de impressão.<br>
+                    Ao usar o modelo de calibração é possível garantir que as configurações estão adequadas e que não há problemas na máquina, antes de imprimir o produto que se deseja, evitando perdas.</p>
+            </article>
+
+            <article id="parametros">
+                <h2>Parâmetros de Impressão</h2>
+                <p>Os parâmetros de impressão são configurações específicas feitas no fatiador que podem ser ajustadas para influenciar diversos aspectos do processo de impressão. Como já foi visto, existem diversos tipos de materiais, assim como diversos modelos de impressora no mercado, então, o fatiador permite que você personalize todo o processo de impressão de acordo com suas necessidades. Os parâmetros podem alterar o acabamento estético da peça, a resistência mecânica e em casos extremos de configurações erradas, pode causar danos à máquina.</p>
+                <p>No Orca Slicer, é possível alterar inúmeras opções, mas serão tratadas apenas algumas, consideradas principais para o processo:</p>
+
+                <h3 id="altura-camada">Altura de Camada</h3>
+                <p>Define a altura de cada camada impressa. Camadas menores resultam em melhor qualidade visual, mas com um tempo de impressão um pouco maior, enquanto camadas maiores reduzem o tempo de impressão, mas podem gerar um acabamento mais “grosseiro”.</p>
+
+                <div class="imagem-guia2">
+                    <img src="img/3 - Print Altura de Camada.JPG" alt="Exemplo de Altura de Camada">
+                </div>
+
+                <h3 id="velocidade">Velocidade de Impressão</h3>
+                <p>Controla a rapidez com que a impressora executa os movimentos durante a impressão. Velocidades mais altas reduzem o tempo, mas podem comprometer a qualidade. Podemos alterar separadamente a velocidade de impressão dos perímetros (contornos), preenchimentos (área interna), e até a velocidade de deslocamento (quando não está imprimindo) além de definir velocidades especialmente para a primeira camada.</p>
+                <div class="imagem-guia2">
+                    <img src="img/4- Print Velocidade.JPG" alt="Exemplo de Velocidade de Impressão">
+                </div>
+                <p>No exemplo abaixo, é possível perceber a diferença no tempo final de impressão ao alterar as velocidades de impressão:</p>
+                <div class="imagem-guia">
+                    <img src="img/5- Print Diferença de Velocidade.jpg" alt="Tempo de Impressão">
+                </div>
+
+                <h3 id="temp-extrusao">Temperatura de Extrusão</h3>
+                <p>Determina a temperatura do bico responsável por derreter o filamento que será depositado na camada. Valores inadequados podem fazer o filamento não derreter adequadamente ou derreter em excesso, causando defeitos de impressão.</p>
+                <p>Cada material possui um intervalo de temperatura, que geralmente vem indicado no rolo de filamento ou embalagem, mas dentro desse intervalo, é preciso achar qual a temperatura que trará melhores resultados.<br>
+                É comum que para um mesmo material, exista variação da temperatura ideal entre diferentes fabricantes e até do mesmo fabricante para diferentes cores.</p>
+
+                <h3 id="temp-mesa">Temperatura da Mesa</h3>
+                <p>Define a temperatura da plataforma(mesa) de impressão. O aquecimento da mesa auxilia na aderência da primeira camada e na estabilidade da peça durante a impressão. </p>
+
+                <div class="imagem-guia">
+                    <img src="img/6- Print Temperaturas.jpg" alt="Exemplo de Temperatura da Mesa">
+                </div>
+                
+                <h3 id="resfriamento">Resfriamento</h3>
+                <p>Controla as ventoinhas da impressora usadas para resfriar o material logo após a extrusão.</p>
+
+                <div class="imagem-guia">
+                    <img src="img/7- Print Resfriamento.jpg" alt="Exemplo de Resfriamento">
+                </div>
+
+                <h3 id="retracao">Retração</h3>
+                <p>Controla o recuo do filamento durante momentos onde há deslocamento sem impressão de uma parte até outra.</p>
+                
+                <div class="imagem-guia">
+                    <img src="img/8- Print Retração.jpg" alt="Exemplo de Retração">
+                </div>
+
+                <h3 id="fluxo">Fluxo</h3>
+                <p>Controla a quantidade de filamento extrudado.</p>
+
+                <div class="imagem-guia">
+                    <img src="img/9- Print Fluxo.jpg" alt="Exemplo de Fluxo">
+                </div>
+
+                <h3 id="suportes">Suportes</h3>
+                <p>Os suportes são regiões impressas para sustentar áreas “flutuantes”. Como o filamento é depositado camada por camada, se o modelo possui uma região que não tem nada abaixo, é preciso gerar essas regiões extras para segurar o filamento.</p>
+
+                <div class="imagem-guia2">
+                    <img src="img/10- Print Suportes.JPG" alt="Exemplo de Suportes">
+                </div>
+            </article>
+
+            <article id="erros">
+                <h2>Erros Comuns</h2>
+
+                <p>Como falado anteriormente, a alteração dos parâmetros causa alterações visíveis no resultado final, e existem alguns erros e condições comuns de se observar no objeto impresso.<br>
+                Impressópolis é um modelo de calibração modular, onde cada modulo permite analisar separadamente esses erros. Com auxílio deste modelo, vamos explorar e entender os defeitos e sua relação com os parâmetros de calibração do fatiador.
+                </p>
+
+                <h3 id="overhang">Overhang</h3>
+                <p>Overhangs são regiões da peça onde há inclinação sem um suporte para sustentação. Na impressão 3D FDM, é viável imprimir em ângulos de até 45°, pois é possível apoiar na camada de baixo o suficiente. Quanto maior a inclinação, maior o domínio dos parâmetros é necessário para uma impressão de qualidade.</p>
+
+                <div class="imagem-guia">
+                    <img src="img/11- Overhang.jpg" alt="Exemplo de Overhang">
+                </div>
+
+                <p>Os principais parâmetros relacionados aos overhangs são a temperatura de extrusão, velocidade de impressão e resfriamento. Para inclinações muito grandes, ativar o parâmetro suporte pode ser ideal.
+                    <li>Temperatura de extrusão: Quando a temperatura está muito alta, o filamento amolece além do ideal, causando perda de sustentação da camada e queda do material</li>
+                    <li>Velocidade de impressão: Com velocidades altas o tempo de sustentação do material recém-extrudado diminui, fazendo com que ele ceda antes de solidificar.</li>
+                    <li>Resfriamento: Baixo resfriamento pode tornar a solidificação da camada mais lenta.</li>
+                    </p>
+
+
+                <h3 id="stringing">Stringing</h3>
+                <p>Neste erro, observa-se fios finos de material que se formam entre partes separadas da peça. Isso acontece quando o bico se desloca de um lugar para o outro e nesse espaço não há impressão, mas o filamento acaba se depositando no ar em pequenas quantidades, formando fios. No modelo abaixo, quando as configurações não estão adequadas, ao se deslocar de um poste para o outro, pode-se perceber a formação de teias.</p>
+
+                <div class="imagem-guia">
+                    <img src="img/12- Stringing.jpg" alt="Exemplo de Stringing">
+                </div>
+
+                <p>
+                    Essa condição está relacionada principalmente aos parâmetros de retração, temperatura e velocidade de impressão.
+                    <li>Retração: Se a retração estiver baixa, o filamento não é “recolhido” o suficiente durante a movimentação entre as regiões.</li>
+                    <li>Temperatura de extrusão: Altas temperaturas podem fazer o material escorrer para fora do bico mesmo sem o movimento de extrusão do filamento.</li>
+                    <li>Velocidade de Impressão: A velocidade de deslocamento baixa também pode ocasionar no escorrimento de material.</li>
+                </p>
+
+
+                <h3 id="warping">Warping</h3>
+                <p>Warping é a deformação da peça causada pela contração do material, geralmente observada nas bordas e regiões inferiores. A temperatura da mesa e fatores externos influenciam diretamente esse erro.</p>
+
+                <li>Temperatura da mesa: A base da impressão pode contrair se a plataforma estiver muito quente.</li>
+                <li>Fatores externos: Variações na temperatura do ambiente ou temperaturas muito baixas ou altas podem causar deformações na peça.</li>
+
+                <div class="imagem-guia2">
+                    <img src="img/13- Warping.jpg" alt="Exemplo de Warping">
+                </div>
+                
+                <h3 id="ponte">Ponte</h3>
+                <p>Pontes são trechos em que o material é extrudado no ar entre dois pontos de apoio. Quando não há precisão nas configurações, a camada cai ou apresenta irregularidades.<br>
+                Para obter qualidade em pontes, é necessário se atentar ao resfriamento, velocidade de impressão e temperatura de extrusão. 
+                </p>
+
+                <li>Resfriamento: Se o resfriamento for insuficiente, a camada tende a cair antes de se solidificar.</li>
+                <li>Velocidade de impressão: Em velocidades muito baixas, o filamento pode ceder antes de chegar ao ponto de apoio, já em velocidades muito altas o filamento pode não ser depositado corretamente, causando irregularidades.</li>
+                <li>Temperatura de extrusão: Quanto maior a temperatura, mais o filamento torna-se maleável, dificultando a formação da ponte.</li>
+
+                <div class="imagem-guia">
+                    <img src="img/14- Pontes.jpg" alt="Exemplo de Pontes">
+                </div>
+
+                <h3 id="ondulacoes">Ondulações</h3>
+                <p>Ondulações são padrões repetitivos nas superfícies da peça. Podem estar relacionadas à velocidade de impressão e fatores externos.</p>
+                <li>Velocidade de impressão: Velocidades elevadas intensificam vibrações mecânicas da impressora, que se refletem na superfície da peça.</li>
+                <li>Fatores Externos: Se a superfície de apoio da impressora for instável, o movimento da própria máquina pode gerar vibrações que causam o aparecimento das ondulações.</li>
+
+                <div class="imagem-guia">
+                    <img src="img/15- Ondulações.jpg" alt="Exemplo de Ondulações">
+                </div>
+
+                <h3 id="extrusao">Subextrusão e Sobreextrusão</h3>
+
+                <p>A subextrusão ocorre quando há falta de material depositado, enquanto a sobreextrusão ocorre pelo excesso. Esses erros estão diretamente relacionados à temperatura de extrusão e ao fluxo de material.</p>
+
+                <li>Temperatura de Extrusão: temperaturas baixas podem dificultar a saída do filamento, enquanto temperaturas altas ocasionam a saída de material em excesso.</li>
+                <li>Fluxo de Material: O fluxo afeta diretamente a quantidade de material que sai.</li>
+
+                <p>Quando a superfície da peça apresenta buracos ou linhas inteiras em evidência das anteriores, é possível que o problema seja de subextrusão. Já quando há pequenas bolinhas ou linhas “saltando” para fora, é possível que o problema seja sobreextrusão</p>
+
+                <div class="imagem-guia">
+                    <img src="img/16- Sub_sobreextrusão.jpg" alt="Exemplo de Subextrusão e Sobreextrusão">
+                </div>
+
+                <h3 id="pe-elefante">Pé de Elefante</h3>
+                <p>O pé de elefante é o alargamento das primeiras camadas da peça, geralmente relacionado à temperatura da mesa.</p>
+
+                <li>Temperatura da mesa: Temperaturas muito altas da mesa podem atrapalhar a solidificação do material, que deforma ao receber as próximas camadas.</li>
+
+                <div class="imagem-guia">
+                    <img src="img/17- Pé de Elefante.jpg" alt="Exemplo de Pé de Elefante">
+                </div>
+
+            </article>
+        </section>
+
+    </main>
+
+</body>
+</html>

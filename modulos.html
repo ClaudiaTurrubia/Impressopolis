@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulos</title>
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/modulos.css">
+</head>
+<body>
+
+  <header class="header-menu">
+    <nav>
+      <a href="index.html">Menu</a>
+      <a href="modulos.html" class="active">Módulos</a>
+      <a href="guia.html">Guia de Impressão 3D</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main class="modulos-layout">
+
+    <aside class="sidebar">
+      <h3>Módulos</h3>
+      <ul>
+        <li><a href="obj/Banco.html">Banco</a></li>
+        <li><a href="obj/Postes.html">Postes</a></li>
+        <li><a href="obj/Onibus.html">Ônibus</a></li>
+        <li><a href="obj/PontoOnibus.html">Ponto de Ônibus</a></li>
+        <li><a href="obj/Casa.html">Casa</a></li>
+        <li><a href="obj/Base.html">Base</a></li>
+      </ul>
+
+      <div class="filtro">
+        <h3>Filtrar</h3>
+
+        <label><input type="checkbox" value="overhang"> Overhang</label>
+        <label><input type="checkbox" value="stringing"> Stringing</label>
+        <label><input type="checkbox" value="warping"> Warping</label>
+        <label><input type="checkbox" value="ponte"> Ponte</label>
+        <label><input type="checkbox" value="ondulacoes"> Ondulações</label>
+        <label><input type="checkbox" value="subsobre"> Sub/Sobreextrusão</label>
+        <label><input type="checkbox" value="peelefante"> Pé de elefante</label>
+        <label><input type="checkbox" value="tolerancias"> Tolerâncias</label>
+      </div>
+    </aside>
+
+    <section class="conteudo">
+      <h1>Impressópolis</h1>
+
+      <div class="grid">
+
+        <a href="obj/Banco.html" class="card card-banco" data-filtro="ponte">
+          <h2>Banco</h2>
+          <div class="overlay"><button>Acessar</button></div>
+        </a>
+
+        <a href="obj/Postes.html" class="card card-postes" data-filtro="stringing">
+          <h2>Postes</h2>
+          <div class="overlay"><button>Acessar</button></div>
+        </a>
+
+        <a href="obj/Onibus.html" class="card card-onibus" data-filtro="subsobre">
+          <h2>Ônibus</h2>
+          <div class="overlay"><button>Acessar</button></div>
+        </a>
+
+        <a href="obj/PontoOnibus.html" class="card card-ponto" data-filtro="overhang">
+          <h2>Ponto de Ônibus</h2>
+          <div class="overlay"><button>Acessar</button></div>
+        </a>
+
+        <a href="obj/Casa.html" class="card card-casa " data-filtro="ondulacoes peelefante tolerancias">
+          <h2>Casa</h2>
+          <div class="overlay"><button>Acessar</button></div>
+        </a>
+
+        <a href="obj/Base.html" class="card card-base" data-filtro="warping">
+          <h2>Base</h2>
+          <div class="overlay"><button>Acessar</button></div>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+  <script src="js/filtros-modulos.js"></script>
+</body>
+</html>
